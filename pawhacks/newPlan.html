@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="newPlan.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="navbar-left">
+            <img src="https://cdn.discordapp.com/attachments/1019996414870290573/1218778173748154389/hecate_logo.png?ex=6608e6a0&is=65f671a0&hm=046df10ff1089f6c01e979671108001f019f068e9916a702c1f11426fbce03c8&" alt="Left Image" width="100" height="auto">
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li>
+                <a href="#">Quizzes ▼</a>
+                <ul>
+                    <li><a href="https://3210ayy7kx9.typeform.com/to/J7gB0BW1" target="_blank" rel="noopener noreferrer">Major Quiz</a></li>
+                    <li><a href="https://3210ayy7kx9.typeform.com/to/r0QXNlgw " target="_blank" rel="noopener noreferrer">College/University Quiz</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Resources ▼</a>
+                <ul>
+                    <li><a href="ecAndIntern.html">Extracurriculars/ Internships</a></li>
+                    <li><a href="scholarship.html">Scholarships</a></li>
+                    <li><a href="otherPlans.html">Other Plans</a></li>
+                    <li><a href="licenses.html">Licenses</a></li>
+                
+                </ul>
+            </li>
+            <li>
+                <a href="#">About Us ▼</a>
+                <ul>
+                    <li><a href="mission.html">Mission Statement</a></li>
+                    <li><a href="meetTeam.html">Meet the team!</a></li>
+                </ul>
+            </li>
+        </ul> 
+        <div class="navbar-right">
+            <a href="userPreference.html">
+            <img src="https://cdn.discordapp.com/attachments/1019996414870290573/1218758227093622854/363633-200.png?ex=6608d40c&is=65f65f0c&hm=94f559c9d6a042d918cf770d970d43ef18962fa2b2fd246f9372f17516a92b57&" alt="Right Image" width="100" height="auto">
+            </a>
+        </div>
+
+    </nav>
+    <div class="container">
+        <div class="dropdown">
+            <h1><label for="major">Select Major:</label></h1>
+            <select id="major" class="select-box">
+                <option value='none' selected>Choose Option</option>
+                <option value="BusinessEcAndS.html">Business/Econ</option>
+                <option value="csEcAndS.html">Computer Science</option>
+                <option value="EnglishEcAndS.html">English</option>
+                <option value="ArtEcAndS.html">Fine Arts</option>
+                <option value="mathEcAndS.html">Math</option>
+                <option value="PSEcAndS.html">Political Science</option>
+            </select>
+            <input type=button value="Next" onclick="goToNewPage()" class = "button-input" />
+            <h4><a href="https://3210ayy7kx9.typeform.com/to/J7gB0BW1" target="_blank" rel="noopener noreferrer">No idea? Take a quiz!</a></h4>
+        </div>
+        
+        <div class="dropdown">
+            <h1><label for="college">Select College:</label></h1>
+            <select id="college" class="select-box">
+                <option value="Choose Option">Choose Option</option>
+                <option value="Brown">Brown</option>
+                <option value="CalTech">CalTech</option>
+                <option value="Columbia">Columbia</option>
+                <option value="Cornell">Cornell</option>
+                <option value="Darmouth">Darmouth</option>
+                <option value="Duke">Duke</option>
+                <option value="Harvard">Harvard</option>
+                <option value="John Hopkins">John Hopkins</option>
+                <option value="MIT">MIT</option>
+                <option value="Northeastern">Northeastern</option>
+                <option value="Northwestern">Northwestern</option>
+                <option value="Notre Dame">Notre Dame</option>
+                <option value="Princeton">Princeton</option>
+                <option value="Rice">Rice</option>
+                <option value="Stanford">Stanford</option>
+                <option value="UCBerkeley">UCBerkeley</option>
+                <option value="UChicago">UChicago</option>
+                <option value="UCLA">UCLA</option>
+                <option value="UPenn">UPenn</option>
+                <option value="Vanderbilt">Vanderbilt</option>
+                <option value="Yale">Yale</option>
+            </select>
+            <h4><a href="https://3210ayy7kx9.typeform.com/to/r0QXNlgw " target="_blank" rel="noopener noreferrer">No idea? Take a quiz!</a></h4>
+        </div>
+    </div>
+    
+
+    <script type="text/javascript">
+        function goToNewPage()
+        {
+            var url = document.getElementById('major').value;
+            if(url != 'none') {
+                window.location = url;
+            }
+        }
+    </script>
+</body>
+
+</html>

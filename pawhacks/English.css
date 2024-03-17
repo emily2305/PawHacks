@@ -1,0 +1,104 @@
+body{
+    font-family:'Garamond';
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #9A89CB, #9A89CB);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-size: 25px;
+    font-family: 'Palatino';
+}
+
+.navbar-left img {
+    width: 250px; /* Adjust the width for a larger image */
+    height: auto;
+    margin: 0 15px;
+}
+
+.navbar-right img {
+    width: 75px;
+    height: auto;
+    margin: 0 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #373454;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(to right, #BBB0D9, #9A89CB);
+    transform: translateY(-2px);
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background: linear-gradient(to right, #FFF, #F5F5F5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 200px;
+}
+
+nav ul ul li {
+    display: block;
+    margin: 0;
+}
+
+nav ul ul li a {
+    color: #333;
+    padding: 12px 24px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul ul li a:hover {
+    background-color: #E0E0E0;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+
+.club-container, .internship-container, .program-container, .competition-container, .section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%; /* Reduced width */
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #9A89CB;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px;  
+    border: 2px solid #000000; 
+    margin-top:50px;
+}
+
+

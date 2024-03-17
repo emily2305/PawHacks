@@ -1,0 +1,180 @@
+body {
+    font-family: 'Palatino';
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    background-image: url('https://cdn.discordapp.com/attachments/1019996414870290573/1218758089877098607/image.png?ex=6608d3ec&is=65f65eec&hm=50d32be8aa7a9213b130df3c9d8a4ed3c15115f0d636634bfe06d33238526bcd&'); /* Set the path to your background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background */
+}
+/* Navigation bar styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #9A89CB, #9A89CB);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-size: 25px;
+    font-family: 'Palatino';
+}
+
+.navbar-left img {
+    width: 250px; /* Adjust the width for a larger image */
+    height: auto;
+    margin: 0 15px;
+}
+
+.navbar-right img {
+    width: 75px;
+    height: auto;
+    margin: 0 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #373454;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(to right, #BBB0D9, #9A89CB);
+    transform: translateY(-2px);
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background: linear-gradient(to right, #FFF, #F5F5F5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 200px;
+}
+
+nav ul ul li {
+    display: block;
+    margin: 0;
+}
+
+nav ul ul li a {
+    color: #333;
+    padding: 12px 24px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul ul li a:hover {
+    background-color: #E0E0E0;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+.Info-container h1 {
+    margin-bottom: 20px;
+    color: #373454;
+}
+
+.Info-container p {
+    color: #FFF;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+    color: #373454;
+}
+
+.login-container form {
+    margin-top: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 10px;
+    color: #FFF;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #EDE9F6; /* Purple theme */
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.login-container .home-button {
+    display: inline-block;
+    width: 50%; /* Adjusted width */
+    padding: 15px; /* Adjusted padding */
+    border: none;
+    border-radius: 5px;
+    background-color: #BBB0D9; /* Purple theme */
+    color: #FFF;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 16px; /* Adjusted font size */
+}
+
+.login-container .home-button:hover {
+    background-color: #a076c2; /* Hover color */
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #cdafe1; /* Dropdown background color */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 200px;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Info-container,
+.login-container {
+    width: 35%; /* Reduced width */
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #9A89CB;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 45px;  
+    border: 2px solid #000000; 
+    margin-top:200px;
+}
